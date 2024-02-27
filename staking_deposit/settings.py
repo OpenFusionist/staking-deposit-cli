@@ -25,12 +25,10 @@ SepoliaSetting = BaseChainSetting(
     GENESIS_VALIDATORS_ROOT=bytes.fromhex('d8ea171f3c94aea21ebc42a1ed61052acf3f9209c00e4efbaaddac09ed9b8078'))
 # Holesky setting
 HoleskySetting = BaseChainSetting(
-    NETWORK_NAME=HOLESKY, GENESIS_FORK_VERSION=bytes.fromhex('01017000'),
-    GENESIS_VALIDATORS_ROOT=bytes.fromhex('9143aa7c615a7f7115e2b6aac319c03529df8242ae705fba9df39b79c59fa8b1'))
-# Mekong setting
-MekongSetting = BaseChainSetting(
-    NETWORK_NAME=MEKONG, GENESIS_FORK_VERSION=bytes.fromhex('10637624'),
-    GENESIS_VALIDATORS_ROOT=bytes.fromhex('9838240bca889c52818d7502179b393a828f61f15119d9027827c36caeb67db7'))
+    # NETWORK_NAME=HOLESKY, GENESIS_FORK_VERSION=bytes.fromhex('01017000'),
+    # GENESIS_VALIDATORS_ROOT=bytes.fromhex('9143aa7c615a7f7115e2b6aac319c03529df8242ae705fba9df39b79c59fa8b1'))
+    NETWORK_NAME=HOLESKY, GENESIS_FORK_VERSION=bytes.fromhex('10000001'),
+    GENESIS_VALIDATORS_ROOT=bytes.fromhex('6e1583608783377f139b7bac661aff7d5cca656af16ac34f9d0eda27dbf1316c'))
 
 
 ALL_CHAINS: Dict[str, BaseChainSetting] = {

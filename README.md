@@ -44,9 +44,9 @@ python3 ./staking_deposit/deposit.py existing-mnemonic
 You can also run the tool with optional arguments:
 
 ```sh
-python3 ./staking_deposit/deposit.py new-mnemonic --num_validators=<NUM_VALIDATORS> --mnemonic_language=english --chain=mainnet --folder=<YOUR_FOLDER_PATH>
+python3 ./staking_deposit/deposit.py new-mnemonic --num_validators=<NUM_VALIDATORS> --mnemonic_language=english --chain=mainnet --execution_address=<YOUR_WITHDRAW_ADDRESS>
 ```
 
 ```sh
-python3 ./staking_deposit/deposit.py existing-mnemonic --num_validators=<NUM_VALIDATORS> --validator_start_index=<START_INDEX> --chain=mainnet --folder=<YOUR_FOLDER_PATH>
+python3 ./staking_deposit/deposit.py existing-mnemonic --num_validators=<NUM_VALIDATORS> --validator_start_index=<START_INDEX> --chain=mainnet --folder=<YOUR_FOLDER_PATH> --execution_address=<YOUR_WITHDRAW_ADDRESS>
 ```

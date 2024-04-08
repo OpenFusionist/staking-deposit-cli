@@ -1,5 +1,8 @@
 # staking-deposit-cli
 
+> [!IMPORTANT]  
+> This CLI tool is a forked version specifically for **Endurance Network**. You can choose the **mainnet** as a parameter for use with Endurance.
+
 #### Build `deposit-cli` with `virtualenv`
 
 ##### Step 0. Python version checking

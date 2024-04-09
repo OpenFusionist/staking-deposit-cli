@@ -19,7 +19,7 @@ tox_common: &tox_common
         key: tox-deps4-{{ arch }}-{{ .Environment.CIRCLE_JOB }}-{{ checksum "requirements.txt" }}-{{ checksum "requirements_test.txt" }}-{{ checksum "setup.py" }}-{{ checksum "Makefile" }}
 
 orbs:
-  win: circleci/windows@5.0 # The Windows orb give you everything you need to start using the Windows executor.          
+  win: circleci/windows@5.0 # The Windows orb give you everything you need to start using the Windows executor.
 
 jobs:
   # Job(s) with Linux OS
@@ -84,6 +84,9 @@ jobs:
       shell: powershell.exe
     steps:
       - checkout
+      - run:
+          name: "Install Python"
+          command: choco install python --version=3.10.3  -y --allow-downgrade
       - run:
           name: Install testing requirements on Windows
           command: python -m pip install -r requirements_test.txt
@@ -194,6 +197,9 @@ jobs:
     steps:
       - checkout
       - run:
+          name: "Install Python"
+          command: choco install python --version=3.10.3 -y --allow-downgrade
+      - run:
           name: Install building requirements on Windows
           command: pip install -r ./build_configs/windows/requirements.txt
       - run:
@@ -300,7 +306,7 @@ workflows:
       - build-linux-arm64
   build_windows:
     jobs:
-        - build-windows
+      - build-windows
   build_macos:
     jobs:
-        - build-macos
+      - build-macos

@@ -210,7 +210,7 @@ jobs:
       - checkout
       - run:
           name: "Install Python"
-          command: choco install python --version=3.10.3
+          command: choco install python --version=3.10.3 --allow-downgrade
       - run:
           name: Install building requirements on Windows
           command: pip install -r ./build_configs/windows/requirements.txt

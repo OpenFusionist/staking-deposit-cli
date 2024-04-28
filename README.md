@@ -3,6 +3,13 @@
 > [!IMPORTANT]  
 > This CLI tool is a forked version specifically for **Endurance Network**. You can choose the **mainnet** as a parameter for use with Endurance.
 
+#### Clone the repository and navigate into the directory
+
+```
+https://github.com/OpenFusionist/staking-deposit-cli
+cd staking-deposit-cli
+```
+
 #### Build `deposit-cli` with `virtualenv`
 
 ##### Step 0. Python version checking

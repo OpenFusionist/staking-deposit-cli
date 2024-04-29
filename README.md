@@ -6,7 +6,7 @@
 #### Clone the repository and navigate into the directory
 
 ```
-https://github.com/OpenFusionist/staking-deposit-cli
+git clone https://github.com/OpenFusionist/staking-deposit-cli
 cd staking-deposit-cli
 ```
 

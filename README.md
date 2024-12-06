@@ -14,7 +14,7 @@ cd staking-deposit-cli
 
 ##### Step 0. Python version checking
 
-Ensure you are using Python version >= Python3.8:
+Ensure you are using Python version >= Python3.12:
 
 ```sh
 python3 -V
